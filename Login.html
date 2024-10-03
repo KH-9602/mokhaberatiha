@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ورود</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="font-awesome.min.css">
     <link rel="stylesheet" href="owl.carousel.css">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a585edefbc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
 
 </head>
 <body>
@@ -35,9 +37,9 @@
               </div>
            <div class="log_reg_btn_parent">
               <div class="log_reg_btn">
-                 <button class="btn"><li><a>ورود</a></li></button>
+                 <!-- <button class="btn"><li><a>ورود</a></li></button> -->
                  <!-- <button class="btn"><li><a>ثبت نام</a></li></button> -->
-                 <p id="date" style="width:20%;direction: ltr;margin-top: 2vh;"></p>
+                 <p id="date" style="width:90%;direction: ltr;margin-top: 2vh;"></p>
 
            </div>
            </div>
@@ -78,19 +80,19 @@
         <div class="col-6">
             
 
-         <form class="login-form">
+         <form class="login-form" action="index.html">
             <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label">آدرس ایمیل</label>
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="لطفا ایمیل خود را وارد کنید...">
+               <label for="exampleInputEmail1" class="form-label">نام کاربری</label>
+               <input type="username" class="form-control" id="exampleInputuser1" aria-describedby="userHelp" placeholder="لطفا نام کاربری خود را وارد کنید...">
              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <div class="mb-3">
                <label for="exampleInputPassword1" class="form-label">گذرواژه</label>
-               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="لطفا پسورد خود را وارد کنید...">
+               <input type="password" class="form-control password" id="exampleInputPassword1" placeholder="لطفا پسورد خود را وارد کنید...">
              </div>
             <div class="col-auto">
                <span id="passwordHelpInline" class="form-text">
-                  <p class="text-black-50"> گذرواژه باید بین 8 الی 20 کاراکتر باشد.</p>
+                  <p class="red"> گذرواژه باید بین 8 الی 20 کاراکتر باشد.</p>
                   </span>
             </div>
     <!-- <div class="mb-3 form-check">
@@ -191,6 +193,7 @@
 
 
     <script src="js/jalali.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/date.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
