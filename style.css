@@ -475,8 +475,32 @@ li:focus {
     margin-top: 1vh;
     margin-right: 1%;
 }
+.extra-text-parent{
+	display: flex;
 
-
+	justify-content: space-between;
+}
+.extra-text-parent span{
+	width: 30%;
+}
+.forget-password{
+	/* background-color: #171718; */
+	margin-right: 13%;
+}
+.forget-password p{
+	cursor: pointer;
+	color: #00299a;
+}
+.checkbox{
+	display: flex;
+	justify-content: space-between;
+	/* background-color: #3d5599; */
+}
+.checkbox label{
+	color: #00299a;
+	margin-right: 7%;
+	margin-top: -0.75vh;
+}
 .contact-box .socialbox{
 	width: 40%;
 	display: flex;
