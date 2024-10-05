@@ -440,7 +440,10 @@ li:focus {
     margin-top: 1vh;
     margin-right: 1%;
 }
-
+.name-parent{
+	display: flex;
+	justify-content: space-between;
+}
 
 .login-form{
     width: 40%;
