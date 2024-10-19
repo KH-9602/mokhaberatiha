@@ -538,7 +538,11 @@ li:focus {
 	height: 40px;
 	color: #000;
 }
-
+.news-card .post-box .text-p2 h3 {
+	overflow: hidden;
+	height: 40px;
+	color: #000;
+}
 .news-card .post-box .text-p p {
 	overflow: hidden;
 	height: 80px;
@@ -548,6 +552,14 @@ li:focus {
 	text-align: justify;
 }
 
+.news-card .post-box .text-p2 p {
+	/* overflow: hidden; */
+	/* height: 80px; */
+	line-height: 2;
+	color: #353535;
+	font-size: 13px;
+	text-align: justify;
+}
 .news-card .blog-title-span {
 	display: block;
 	text-align: center;
