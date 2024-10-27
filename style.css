@@ -2159,8 +2159,29 @@ li:focus {
 body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
     color: #070478;
 }
+.news-container{
+	width: 75%;
+	padding: 1vh !important;
+	border-radius: 16px;
+	overflow: hidden;
+	/* box-shadow: 0 0 4px 2px #4d4d4d; */
 
-
+}
+.news-container img{
+	width:100% !important;
+	height: 300px;
+	border-radius: 16px;
+}
+.news-text{
+	width: 75%;
+	padding: 2vh;
+	border-radius: 16px;
+	box-shadow: 0 0 16px 1px #313131;
+}
+.input-parent{
+	justify-content: space-between !important;
+	flex-wrap: nowrap;
+}
 @media screen and (min-width:992px) and (max-width:1200px){
 
 	
