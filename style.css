@@ -171,6 +171,9 @@ li:focus {
 	justify-content: space-between !important;
 	box-sizing: border-box;
 	height: 100px;
+	background-image: url(img/Topbar-world1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	/* background-image: linear-gradient(to bottom right, #fff , #fff, rgb(174, 173, 173)); */
 }
 /* 
@@ -265,6 +268,7 @@ li:focus {
 
 
 }
+
 .top-bar .menu p{
 	display: none;
 	margin-top: 3vh;
@@ -2182,6 +2186,68 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	justify-content: space-between !important;
 	flex-wrap: nowrap;
 }
+
+
+.news-main-page{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+}
+.news-main-cards{
+	width: 80%;
+	box-sizing: border-box;
+	padding: 2vh;
+
+}
+.news-main-cards hr{
+	border: 1px solid gray;
+}
+.news-main-cards p{
+	padding-bottom: 2vh;
+}
+.news-main-sidebar{
+	width: 20%;
+	height: 70vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+	padding: 2vh;
+	border-radius: 12px 0px 0px 12px;
+}
+.news-main-sidebar{
+    background: linear-gradient(90deg, #525252, rgb(73, 91, 192));
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+} 
+
+.news-main-sidebar a{
+	padding: 2vh;
+	text-align: right;
+	font-size: 20px;
+	margin-top: 1vh;
+	display: block;
+	color: white;
+	border-bottom: 1px solid #b6b6b6;
+	&:hover{
+		transform: scale(1.08);
+		transition: all 0.3s;
+	}
+}
+.is-active{
+	border-radius: 12px;
+	background-color: #949393;
+}
+.sidebar-guilan{
+	width: 100%;
+	border-radius: 12px;
+	box-sizing: border-box;
+	padding: 1vh;
+	height: 70vh;
+	overflow-y: auto;
+}
+
 @media screen and (min-width:992px) and (max-width:1200px){
 
 	
