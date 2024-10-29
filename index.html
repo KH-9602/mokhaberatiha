@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="owl.theme.default.css">
       <link rel="stylesheet" href="style.css">
       <script src="https://kit.fontawesome.com/a585edefbc.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    </head>
@@ -18,7 +19,7 @@
                      <img src="favicon/android-chrome-192x192.png" alt="">
                       <p>مخابراتی ها</p>
                           
-                     </div>
+                  </div>
                  
                   <!-- <div class="col-md-3">
                      <div class="show-cat">
@@ -34,8 +35,7 @@
                            <a href="Login.html" class="btn" role="button"><button class="btn">ورود</button></a>
                            <!-- <button class="btn"><li><a>ثبت نام</a></li></button> -->
                            <p id="date" style="width:50%;direction: ltr;margin-top: 2vh;"></p>
-         
-                     </div>
+                        </div>
                      </div>
                      
             
@@ -50,6 +50,16 @@
       <div class="main-header">
          <div class="container-fluid">
             <div class="col-md-7 col-sm-8">
+               <div class="responsive-menu" style="width: 100%;">
+                  <div class="responsive-menu-top" style="display: flex; align-items: center; justify-content: space-between;">
+                     <i class="fa-solid fa-bars"></i> 
+                     <div class="search-btn-respon">
+                        <input type="text" class="form-control" placeholder="جستجو...">
+                     </div>
+                     <a href="Login.html" class="btn" role="button"><button class="btn">ورود</button></a>
+                     <!-- <button class="btn"><li><a>ثبت نام</a></li></button> -->
+                  </div>
+               </div>
                <div class="main-menu">
                   <ul>
                      <li><a href="Khabar.html"><p href="#">اتاق خبر</p></a></li>
@@ -83,7 +93,7 @@
                      <li><a href="media-archive.html"><p class="text-center">آرشیو تصاویر</p></a></li>
                      <li><p href="#">قوانین و دستورالعمل ها</p></li>
                      <li><a href="aboutus.html"><p class="text-center">درباره ما</p></a></li>
-                     <li><p href="#">تماس با ما</p></li>
+                     <li><a href="contact-us.html"><p class="text-center">تماس با ما</p></a></li>
                     <li><a href="phone-get.html"><p class="text-center">عضویت</p></a></li>
 
                   </ul>
@@ -92,7 +102,7 @@
             <div class="col-md-5 col-sm-4">
                <div class="search-btn">
                   <input type="text" class="form-control" placeholder="جستجو...">
-                  <span style="margin-top: 1.5vh;"><i class="fa fa-search"></i></span>
+                  <span style="margin-top: 1.5vh;"><i class="fa fa-search"></i>
                </div>
             </div>
             
@@ -110,9 +120,9 @@
                      <div class="bx">
                         <h4>نظرسنجی درباره لورم ایپسوم رسانه  راهکارها باشد؟</h4>
                         <hr>
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="margin-top: -4vh !important;">
                            <div class="img-box">
-                              <figure class="form-check">
+                              <figure class="form-check" style="display: flex; align-items: center;">
                                  <input class="form-check-input" type="checkbox" value="" id="first">
                                  <label class="form-check-label" for="first">
                                     نظرسنجی در مورد لورم
@@ -123,7 +133,7 @@
 
                         <div class="col-md-12">
                            <div class="img-box">
-                              <figure class="form-check">
+                              <figure class="form-check" style="display: flex; align-items: center;">
                                  <input class="form-check-input" type="checkbox" value="" id="second">
                                  <label class="form-check-label" for="second">
                                     نظرسنجی در مورد لورم
@@ -135,7 +145,7 @@
 
                         <div class="col-md-12">
                            <div class="img-box">
-                              <figure class="form-check">
+                              <figure class="form-check" style="display: flex; align-items: center;">
                                  <input class="form-check-input" type="checkbox" value="" id="third">
                                  <label class="form-check-label" for="third">
                                     نظرسنجی در مورد لورم
@@ -146,7 +156,7 @@
 
                         <div class="col-md-12">
                            <div class="img-box">
-                              <figure class="form-check">
+                              <figure class="form-check" style="display: flex; align-items: center;">
                                  <input class="form-check-input" type="checkbox" value="" id="fourth">
                                  <label class="form-check-label" for="fourth">
                                     نظرسنجی در مورد لورم
@@ -237,7 +247,7 @@
                         </div>
                      </div>
                   </a> -->
-                  <div class="comment_btn">
+                  <div class="comment_btn" style="margin-top: 2vh !important;">
                      <button class="btn"><p>ثبت نظر</p></button>
                   </div>
                   
@@ -245,7 +255,7 @@
             </div>
             <div class="col-md-6">
                <div class="main-slider-box">
-                  <div class="owl-carousel owl-theme main-slider">
+                  <!-- <div class="owl-carousel owl-theme main-slider">
                      <div class="item">
                         <figure>
                            <img src="img/unnamed.jpg" alt="">
@@ -274,7 +284,39 @@
                            </figcaption>
                         </figure>
                      </div>
-                  </div>
+                  </div> -->
+                  <a href="Khabar.html">
+                     <div class="owl-carousel owl-theme main-slider">
+                        <div class="item">
+                           <figure>
+                              <img src="img/unnamed.jpg" alt="">
+                              <figcaption class="gradient-fig"></figcaption>
+                              <figcaption class="desc-fig">
+                                 <span><i class="fa fa-heart"></i> 56</span>
+                                 <h3>عنوان خبری در اسلایدر</h3>
+                                 <span><i class="fa fa-clock-o"></i> 10 ماه پیش</span>
+                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و...
+                                 </p>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="item">
+                           <figure>
+                              <img src="img/290667058azer news.jpg" alt="">
+                              <figcaption class="gradient-fig"></figcaption>
+                              <figcaption class="desc-fig">
+                                 <span><i class="fa fa-heart"></i> 56</span>
+                                 <h3>عنوان خبری در اسلایدر</h3>
+                                 <span><i class="fa fa-clock-o"></i> 10 ماه پیش</span>
+                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و...
+                                 </p>
+                              </figcaption>
+                           </figure>
+                        </div>
+                     </div>
+                  </a>
                </div>
             </div>
             <div class="col-md-3">
@@ -481,7 +523,7 @@
                         <span class="title">فیلم و ویدئو</span>
                         <div class="col-md-6">
                            <div class="main-post">
-                              <a href="#">
+                              <a href="media-archive.html">
                                  <figure>
                                     <img src="img/290667058azer news.jpg" alt="">
                                     <figcaption>
@@ -493,7 +535,7 @@
                               </a>
                            </div>
                            <div class="main-post">
-                              <a href="#">
+                              <a href="media-archive.html">
                                  <figure>
                                     <img src="img/696112501123546.jpg" alt="">
                                     <figcaption>
@@ -508,7 +550,7 @@
                         <div class="col-md-6">
                            <div class="left-content">
                               <div class="col-md-6">
-                                 <a href="#">
+                                 <a href="media-archive.html">
                                     <div class="content">
                                        <figure>
                                           <img src="img/696112501123546.jpg" alt="">
@@ -521,7 +563,7 @@
                                  </a>
                               </div>
                               <div class="col-md-6">
-                                 <a href="#">
+                                 <a href="media-archive.html">
                                     <div class="content">
                                        <figure>
                                           <img src="img/parsitarh-1038x515.png" alt="">
@@ -533,7 +575,7 @@
                                  </a>
                               </div>
                               <div class="col-md-6">
-                                 <a href="#">
+                                 <a href="media-archive.html">
                                     <div class="content">
                                        <figure>
                                           <img src="img/karkhaneh_iran_3.jpg" alt="">
@@ -545,7 +587,7 @@
                                  </a>
                               </div>
                               <div class="col-md-6">
-                                 <a href="#">
+                                 <a href="media-archive.html">
                                     <div class="content">
                                        <figure>
                                           <img src="img/1397022612335447514155694.jpg" alt="">
