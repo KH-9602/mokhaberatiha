@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="style.css">
       <script src="https://kit.fontawesome.com/a585edefbc.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
    </head>
 
@@ -48,32 +49,68 @@
     <div class="main-header">
        <div class="container-fluid">
           <div class="col-md-7 col-sm-8">
-             <div class="main-menu">
-                <ul>
-                    <li><a href="index.html"><p class="text-center">صفحه اصلی</p></a></li>
+            <div class="responsive-menu" style="width: 100%;">
+               <div class="responsive-menu-top" style="display: flex; align-items: center; justify-content: space-between;">
+                  <i class="fa-solid fa-bars"></i> 
+                  <div class="search-btn-respon">
+                     <input type="text" class="form-control" placeholder="جستجو...">
+                  </div>
+                  <a href="Login.html" class="btn" role="button"><button class="btn">ورود</button></a>
+                  <!-- <button class="btn"><li><a>ثبت نام</a></li></button> -->
+               </div>
+            </div>
+            <div class="main-menu">
+               <ul>
+                 <li><a href="index.html"><p class="text-center">صفحه اصلی</p></a></li>
 
-                   <li><p href="#">اتاق خبر</p></li>
-                   <!-- <li><p href="#">اقتصادی</p></li> -->
-                   <!-- <div class="dropdown">
-                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                       Dropdown button
-                     </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                       <li><a class="dropdown-item" href="#">Action</a></li>
-                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                   </div> -->
-                   <li><p href="#">انجمن ها</p></li>
+                 <!-- <li><a href="Khabar.html"><p>اتاق خبر</p></a></li> -->
+                  <!-- <li><p href="#">اقتصادی</p></li> -->
+                  <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div> -->
+                  <li id="society-res-show"><a href="society.html"><p>انجمن ها</p></a></li>
+                  <li id="society-res-hide">
+                    <div class="dropdown">
+                       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                         انجمن ها
+                       </a>
+                     
+                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <!-- <li><a class="dropdown-item" href="#">استان ها</a></li>-->
+                         <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                         <li class="dropstart">
+                          <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">استان ها</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="" class="dropdown-item">تهران</a>
+                              <a href="" class="dropdown-item">گیلان</a>
+                              <a href="" class="dropdown-item">اصفهان</a>
+                              <a href="society.html" class="dropdown-item" style="display: flex; justify-content: space-between; align-items: center;">
+                                <i class="fa-solid fa-arrow-left-long"></i>
+                                مشاهده کامل
+                             </a>
+                            </li>
+                          </ul>
+                        </li>
+                       </ul>
+                     </div>
+                  </li>
 
-                   <li><p href="#">آرشیو تصاویر </p></li>
-                   <li><p href="#">قوانین و دستورالعمل ها</p></li>
-                   <li><a href="aboutus.html"><p class="text-center">درباره ما</p></a></li>
-                   <li><p href="#">تماس با ما</p></li>
-                  <li><a href="phone-get.html"><p class="text-center">عضویت</p></a></li>
+                  <li><a href="media-archive.html"><p class="text-center">آرشیو تصاویر</p></a></li>
+                  <li><p href="#">قوانین و دستورالعمل ها</p></li>
+                  <li><a href="aboutus.html"><p class="text-center">درباره ما</p></a></li>
+                  <li><a href="contact-us.html"><p class="text-center">تماس با ما</p></a></li>
+                 <li><a href="phone-get.html"><p class="text-center">عضویت</p></a></li>
 
-                </ul>
-             </div>
+               </ul>
+            </div>
           </div>
           <div class="col-md-5 col-sm-4">
              <div class="search-btn">

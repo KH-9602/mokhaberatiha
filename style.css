@@ -878,8 +878,8 @@ li:focus {
 }
 
 .otp-input {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     text-align: center;
     font-size: 1.5rem;
     margin: 0 5px;
@@ -2234,6 +2234,10 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	display: block;
 	color: white;
 	border-bottom: 1px solid #b6b6b6;
+	&:hover{
+		transform: scale(1.05);
+		transition: all 0.3s;
+	}
 }
 .is-active{
 	border-radius: 12px;
@@ -2247,6 +2251,9 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	height: 70vh;
 	overflow-y: auto;
 }
+
+
+
 .accord-parent{
 	width: 60%;
 	margin-right: 20%;
@@ -2261,8 +2268,7 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	margin-right: auto;
 }
 .accordion-button{
-	padding: 3vh;
-	font-size: 20px;
+	font-size: 20px !important;
     background: linear-gradient(90deg, #4d2f69, rgb(73, 91, 192));
     background-size: 400% 400%;
     -webkit-animation: AnimationName 12s ease infinite;
@@ -2320,6 +2326,33 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 }
 .responsive-menu{
 	display: none;
+}
+#society-res-show{
+	display: none;
+}
+.form-control1 {
+	display: block;
+	width: 100% !important;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+.form-control1:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 @media screen and (min-width:992px) and (max-width:1200px){
@@ -2415,6 +2448,9 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	.main-header .container-fluid .col-md-5{
 		display: none;
 	}
+	#log-search-hide{
+		display: none;
+	}
 	.responsive-menu-top i{
 		font-size: 30px;
 		width: 10%;
@@ -2457,15 +2493,15 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	#search-search{
 		margin: 2vh 0% 2vh 3%;
 	}
-	.news-card-2-parent{
+	.news-card-2-parent, .news-card-3-parent{
 		display: flex;
 		flex-wrap: wrap;
 	}
 	.news-main-cards{
-		width: 60%;
+		width: 70%;
 	}
 	.news-main-sidebar{
-		width: 40%;
+		width: 30%;
 	}
 	#m-a-res2{
 		width: 80%;
@@ -2475,6 +2511,45 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 		width: 80%;
 		margin-right: 10%;
 	}
+	.bx h4{
+		margin-top: 0 !important;
+		margin-bottom: 6vh !important;
+	}
+	.bx hr{
+		display: none;
+	}
+	#society-res-show{
+		display: block;
+	}
+	#society-res-hide{
+		display: none;
+	}
+	#phone-get-form{
+		width: 80%;
+	}
+	#phone-get-form button{
+		width: 60%;
+		margin: 2.5vh 20%;
+	}
+	#register-code-form button{
+		width: 40%;
+		margin: 2.5vh 30%;
+	}
+	.register-form{
+		width: 80%;
+		margin: 2vh auto;
+	}
+	.special-cat-box{
+		width: 100%;
+	}
+	.hero, .hero img{
+		height: 250px;
+	}
+
+
+
+
+
 
 
 
