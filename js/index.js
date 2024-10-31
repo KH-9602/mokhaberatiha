@@ -88,3 +88,44 @@ $(".comment_btn").click(function (e) {
     $(".main-menu").toggle();
     
  });
+
+
+    $(".call").click(function (e) { 
+        e.preventDefault();
+        // Hide other dropdowns
+        $(".socail-items, .address-items").hide();
+        
+        // Set z-index to normal for all
+        $(".call, .socail, .address").css("z-index", "1");
+    
+        // Show the clicked dropdown and bring it to the socail
+        $(".call-items").toggle();
+        $(this).css("z-index", "10");
+    });
+    
+    $(".socail").click(function (e) { 
+        e.preventDefault();
+        // Hide other dropdowns
+        $(".call-items, .address-items").hide();
+        
+        // Set z-index to normal for all
+        $(".call, .socail, .address").css("z-index", "1");
+    
+        // Show the clicked dropdown and bring it to the socail
+        $(".socail-items").toggle();
+        $(this).css("z-index", "10");
+    });
+    
+    $(".address").click(function (e) { 
+        e.preventDefault();
+        // Hide other dropdowns
+        $(".call-items, .socail-items").hide();
+        
+        // Set z-index to normal for all
+        $(".call, .socail, .address").css("z-index", "1");
+    
+        // Show the clicked dropdown and bring it to the socail
+        $(".address-items").toggle();
+        $(this).css("z-index", "10");
+    });
+    
