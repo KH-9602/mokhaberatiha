@@ -1029,6 +1029,22 @@ li:focus {
 	background-color: #070478;
 }
 
+.contactus-form{
+	padding: 2vh;
+	margin-top: 6vh;
+	border-radius: 8px;
+	box-shadow: 0 0 16px 1px gray;
+}
+.contactus-form label{
+	margin-top: 2vh;
+}
+.contactus-form button{
+	margin-top: 4vh;
+}
+.first-row{
+	display: flex;
+	justify-content: space-between;
+}
 
 /* .main-slider-box */
 
@@ -2434,19 +2450,40 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
     transform: scale(1.09);
 	transition: all 0.5s;
 }
-.slider-part .list .item1{
-    text-align: center;
+.item1{
+	width:50%;
+
+    text-align: justify;
     /* display: flex; */
     align-items: center;
-    width: var(--width);
-    position: absolute;
-    left: 110%;
-    animation: auto-run1 25s linear infinite;
-    animation-delay: calc((25s / var(--quantity)) * (var(--item-position) - 1));
+	margin-top: 4vh;
+	border: 2px solid gray;
     background-color: white;
+	padding: 0vh 2vh 2vh 2vh;
+    box-shadow: 0px 0px 16px 2px gray;
+    border-radius: 4px;
+}
+.admin-reply{
+	border-top: 1px solid #555;
+
+}
+.icons-parent{
+	/* background-color: #3756ad; */
 	padding: 2vh;
-    box-shadow: 0px 0px 6px 2px gray;
-    border-radius: 12px;
+	width: 25%;
+	margin: 2vh 0%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.icons-parent i{
+	color: #807f7f !important;
+	font-size: 32px !important;
+	&:hover{
+		cursor: pointer;
+		color: #000 !important;
+	}
+
 }
 @keyframes auto-run1{
     from{
