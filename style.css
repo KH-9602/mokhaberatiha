@@ -260,6 +260,7 @@ li:focus {
 	justify-content: right !important;
 	align-items: center;
 	right: 0 !important;
+	box-sizing: border-box;
 	/* margin: 0.5vh 0% 0.5vh; */
 	/* border: 1px solid #d4cece; */
 	text-align: center;
@@ -325,6 +326,19 @@ li:focus {
 .log_reg_btn a button:hover{
 	background-color: #23222215;
 	transition: all 0.4s;
+}
+.log_reg_btn .dropdown{
+	display: flex;
+	align-items: center;
+
+}
+
+.log_reg_btn .dropdown i{
+	color: #000 !important;
+	font-size: 18px;
+}
+.log_reg_btn .dropdown a{
+	width: 100% !important;
 }
 .main-header {
     width: 100%;
@@ -1866,7 +1880,15 @@ li:focus {
     -o-animation: AnimationName 12s ease infinite;
     animation: AnimationName 12s ease infinite;
 }
+.main-title{
+    background: linear-gradient(90deg, #acc6ff , #d7eaff , rgb(167, 167, 167), rgb(255, 255, 255) , white);
+    background-size: 400% 400%;
 
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
