@@ -85,7 +85,7 @@ $(".comment_btn").click(function (e) {
 
  $(".fa-bars").click(function (e) { 
     e.preventDefault();
-    $(".main-menu").toggle();
+    $(".main-menu").fadeToggle();
     
  });
 
