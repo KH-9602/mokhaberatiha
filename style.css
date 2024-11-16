@@ -207,22 +207,32 @@ li:focus {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
+.search-date-parent{
+	display: flex !important;
+	justify-content: space-between !important;
+	padding: 2vh !important;
+	align-items: center !important;
+}
 .search-btn {
 	display: flex;
 	justify-content: center;
-	width:40%;
-	margin-right: 55%;
-	margin-top: 1.5vh;
-	height: 20px;
+	align-items: center;
+	/* width:40%; */
+	margin-right:50%;
+	/* margin-top: 1.5vh; */
+	/* height: 20px; */
 	text-align: center;
 	line-height: 30px;
 	font-size: 18px;
 	cursor: pointer;
-	padding-top: 8px;
+	padding-top: 0vh !important;
+
+}
+.search-btn input{
+	margin: 0 !important;
 }
 .search-btn span{
-	margin:0.5vh -10%;
+	margin:0vh -10%;
 }
 
 .top-bar .top-cat-box {
@@ -2586,6 +2596,10 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
+#date2{
+	display: none;
+}
+
 @media screen and (min-width:992px) and (max-width:1200px){
 
 	
@@ -2676,8 +2690,8 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	.main-header, .container-fluid, .col-md-7, .col-sm-8{
 		padding: 0vh !important;
 	}
-	.main-header .container-fluid .col-md-5{
-		display: none;
+	.main-header .container-fluid .search-date-parent{
+		display: none !important;
 	}
 	#log-search-hide{
 		display: none;
@@ -2702,6 +2716,12 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 	}
 	.main-menu{
 		display: none;
+	}
+	.main-header .search-btn , .date-box{
+		display: none;
+	}
+	#date2{
+		display: block;
 	}
 	.search-btn-respon{
 		width: 30%;
