@@ -218,7 +218,7 @@ li:focus {
 	justify-content: center;
 	align-items: center;
 	/* width:40%; */
-	margin-right:50%;
+	margin-right:30%;
 	/* margin-top: 1.5vh; */
 	/* height: 20px; */
 	text-align: center;
@@ -226,7 +226,6 @@ li:focus {
 	font-size: 18px;
 	cursor: pointer;
 	padding-top: 0vh !important;
-
 }
 .search-btn input{
 	margin: 0 !important;
@@ -2724,7 +2723,26 @@ body > div.main-header > div > div.col-md-10 > div > ul > li > a:hover  {
 		display: block;
 	}
 	.search-btn-respon{
-		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:40%;
+		text-align: center;
+		line-height: 30px;
+		font-size: 18px;
+		cursor: pointer;
+		padding-top: 0vh !important;
+	}
+	.search-btn-respon input{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.search-btn-respon span{
+		width: 20% !important;
+		margin-right: -27%;
+	}
+	.search-btn-respon i{
+		font-size: 20px;
 	}
 	.login-form{
 		width: 60%;
